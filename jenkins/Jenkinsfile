@@ -3,7 +3,7 @@ pipeline {
         // set a timeout of 60 minutes for this pipeline
         timeout(time: 60, unit: 'MINUTES')
     }
-    agent ant
+    agent any
 	  tools {nodejs "nodejs"}
 	
 	environment {
